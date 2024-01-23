@@ -4,7 +4,7 @@ async function fetchSpotifyAPI() {
     const playlistId = "37i9dQZF1DX9tPFwDMOaN1"; // Playlist ID for "Nostalgic Bollywood Songs (2000-2010)"
     const response = await fetch(`https://api.spotify.com/v1/playlists/${playlistId}/tracks`, {
         headers: {
-            Authorization: "Bearer d128c3f604ef430ab72613ccd5b51c00" 
+            Authorization: "Bearer " 
         },
     })
     .then(response => response.json())

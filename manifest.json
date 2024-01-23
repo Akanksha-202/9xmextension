@@ -1,6 +1,19 @@
 {
-    "name" : "9xM",
-    "version" : "1.0",
-    "manifest_version" : 2,
-    "descripton" : "Delve into the era of 9xM with the popular 2000s bollywood songs"
+    "name": "9xM Lite",
+    "version": "1.0",
+    "manifest_version": 2,
+    "descripton": "Delve into the era of 9xM with the popular 2000s bollywood songs",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "128": "icon.png"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "tabs",
+        "https://www.spotify.com/"
+    ]
 }

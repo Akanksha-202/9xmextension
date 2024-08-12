@@ -11,9 +11,25 @@
         "128": "icon.png"
     },
     "permissions": [
-        "storage",
         "activeTab",
         "tabs",
+        "storage",
         "https://www.spotify.com/"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
     ]
 }

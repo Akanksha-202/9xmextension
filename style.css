@@ -1,7 +1,51 @@
-.box{
-    height: 500px;
-    width: 900px;
+body {
+    background-color: #1DB954; /* Spotify's green */
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #fff;
+}
+
+.player-container {
+    background-color: #181818; /* Matches the dark gray color of the Spotify player */
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    width: 320px;
+}
+
+
+#spotify-player {
+    width: 100%;
+    height: 80px; /* Assuming a compact height for the player */
+    background-color: #181818; /* Matches Spotify's dark player background */
+    border-radius: 12px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    background-color: #1DB954; /* Spotify's green */
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+#btn:hover {
+    background-color: #1ed760; /* Slightly brighter green on hover */
+}
+
+#btn:active {
+    background-color: #148b41; /* Darker green on click */
 }
